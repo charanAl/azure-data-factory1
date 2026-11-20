@@ -1,0 +1,97 @@
+{
+	"name": "Json1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "911_data.json",
+				"folderPath": "sampledir",
+				"container": "rawlayer"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"name": {
+					"type": "string"
+				},
+				"properties": {
+					"type": "object",
+					"properties": {
+						"linkedServiceName": {
+							"type": "object",
+							"properties": {
+								"referenceName": {
+									"type": "string"
+								},
+								"type": {
+									"type": "string"
+								}
+							}
+						},
+						"annotations": {
+							"type": "array"
+						},
+						"type": {
+							"type": "string"
+						},
+						"typeProperties": {
+							"type": "object",
+							"properties": {
+								"location": {
+									"type": "object",
+									"properties": {
+										"type": {
+											"type": "string"
+										},
+										"fileName": {
+											"type": "string"
+										},
+										"folderPath": {
+											"type": "string"
+										},
+										"container": {
+											"type": "string"
+										}
+									}
+								},
+								"columnDelimiter": {
+									"type": "string"
+								},
+								"escapeChar": {
+									"type": "string"
+								},
+								"firstRowAsHeader": {
+									"type": "boolean"
+								},
+								"quoteChar": {
+									"type": "string"
+								}
+							}
+						},
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "object",
+								"properties": {
+									"name": {
+										"type": "string"
+									},
+									"type": {
+										"type": "string"
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
