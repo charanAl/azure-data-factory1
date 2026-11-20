@@ -1,0 +1,16 @@
+{
+	"name": "ADF-hp1",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true,
+			"isExplicitlySet": false
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "b159f467-019f-4152-bacb-5475c0e2893c",
+		"tenantId": "49624872-f7c6-433f-b2bc-8a30daeed807"
+	}
+}
