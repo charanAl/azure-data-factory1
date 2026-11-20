@@ -1,0 +1,16 @@
+{
+	"name": "azure-hpADF1",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true,
+			"isExplicitlySet": false
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "ad80733b-57de-47c5-8b8e-ee85f89a25c4",
+		"tenantId": "49624872-f7c6-433f-b2bc-8a30daeed807"
+	}
+}
